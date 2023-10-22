@@ -1,0 +1,276 @@
+/* root css start */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+p{ 
+    color: #7c8ca0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #5d6981;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul , a {
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --btn: #ff2d55;
+    --blue: #0149a1;
+    --h: #5d6981;
+    --p: #7c8ca0;
+    --roboto: 'Roboto';
+}
+
+/* root css end */
+
+/* preloader part */
+
+.preloader_part{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* preloader end */
+
+/* back to top part start*/
+
+.back_to_top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1;
+} 
+
+.btn-btt{
+    background-color: var(--blue);
+}
+.btn-btt:hover{
+    background-color: white;
+    color: var(--blue);
+    box-shadow: 0px 0px 12.48px 0.52px var(--blue);
+}
+
+/* back to top part end */
+
+/* navbar part start */
+.navbar{
+    background-color: white;
+}
+.navbar-brand h1{
+    color: #0149a1;
+}
+.nav-link{
+    font-family: var(--roboto);
+    font-size: 15px;
+    color: var(--h);
+}
+.nav-link:hover{
+    border: 1px solid #9fabba;
+    border-radius: 50px;
+    color: var(--h);
+}
+.bg-on-scroll{
+    background-color: white;
+}
+
+/* navbar part end */
+
+/* home part start */
+.home_con p{
+    color: var(--p);
+    font-family: var(--roboto);
+    font-weight: 300;
+    font-size: 36px;
+}
+.home_con h1{
+    color: var(--blue);
+    font-family: var(--roboto);
+    font-weight: bold;
+    font-size: 65px;
+    padding-top: 200px;
+}
+.btn-home{
+    background-color: var(--btn);
+    width: 240px;
+    height: 60px;
+    border-radius: 50px;
+    color: white;
+    border: 0;
+    margin: 90px 0;
+}
+.home_con_main{
+    position: relative;
+    margin-top: -85px;
+}
+
+/* home part end */
+
+/* service part start */
+.service{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.service_con_main h6{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.service_con_main p{
+    font-size: 15px;
+    font-weight: 300;
+}
+/* service part end */
+
+/* creative part start */
+
+.creativity{
+    background: url(../img/creativity.png) fixed;
+    background-position: center;
+    height: 80vh;
+}
+.btn-creat{
+    width: 240px;
+    height: 60px;
+    border-radius: 50px;
+    border: 0;
+    background-color: var(--blue);
+    color: white;
+    margin-top: 18%;
+    box-shadow: 0px 0px 50px 50px rgba(255, 255, 255, 0.918);
+}
+/* creative part end */
+
+/* work part start */
+
+.work{
+    padding: 120px 0;
+    background-color: var(--blue);
+}
+.work_con h1{
+    font-size: 65px;
+    font-weight: bold;
+    color: white;
+}
+.work_con p{
+    font-size: 35px;
+    font-weight: 300;
+    color: #5483bb;
+}
+.work_con_main img{
+    margin-top: 125px;
+}
+.work_con_main p{
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+    margin-top: 100px;
+}
+.btn-work{
+    width: 245px;
+    height: 65px;
+    border: 0;
+    border-radius: 50px;
+    color: var(--blue);
+    background-color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 90px;
+}
+/* work part end */
+
+/* portfolio part start */
+
+.swipwer_con_main {
+    margin: 80px 15%;
+}
+.swipwer_con_main img{
+    margin-bottom: 55px !important;
+}
+.service_con_main p , q{
+    font-size: 20px;
+    font-style: italic;
+}
+.swiper-wrapper{
+    margin-bottom: 67px;
+}
+/* portfolio part end */
+
+/* team part start */
+
+#team{
+    padding-top: 120px;
+    background-color: #edeff1;
+}
+.team_con{
+    padding-bottom: 90px;
+}
+.team_con h1{
+    font-size: 65px;
+    font-weight: bold;
+    color: var(--blue);
+}
+.team_con p{
+    font-size: 30px;
+    font-weight: 300;
+    color: var(--p);
+}
+.team_con_main h5{
+    font-size: 28px;
+    font-weight: bold;
+}
+.team_con_main p{
+    font-size: 15px;
+    font-weight: 300;
+}
+.btn-team{
+    margin: 90px auto;
+}
+/* team part end */
+
+/* contact part start */
+
+#contact{
+    width: 99.1%;
+    background: fixed;
+}
+
+/* contact part end */
+
+/* footer part start */
+
+.footer{
+    background-color: var(--blue);
+    padding: 100px 0;
+}
+.footer_con_main a{
+    line-height: 25px;
+    display: block;
+    font-size: 15px;
+    color: white;
+}
+.last-footer p , a{
+    font-size: 15px;
+    color: white;
+}
+/* footer part end */
